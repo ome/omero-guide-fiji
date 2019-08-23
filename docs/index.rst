@@ -1,17 +1,12 @@
-Welcome to guide template's documentation!
-==========================================
+Fiji
+====
 
 Contents:
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1
 
-
-
-Indices and tables
-==================
-
-* :ref:`genindex`
-* :ref:`modindex`
-* :ref:`search`
-
+   installation
+   manual_analysis
+   threshold_manual
+   threshold_scripting
