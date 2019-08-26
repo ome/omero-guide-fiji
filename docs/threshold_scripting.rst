@@ -54,59 +54,56 @@ the UI steps.
 This script explores the JAVA API using Groovy.
 See \ https://docs.openmicroscopy.org/latest/omero/developers/Java.html\ ,
 
-1. In your browser, go to the server address provided.
+#. In your browser, go to the server address provided.
 
-2. Log in using the credentials provided.
+#. Log in using the credentials provided.
 
-3. Make sure you are selecting your own data. Select the Dataset **A-Fiji-dataset**.
+#. Make sure you are selecting your own data. Select the Dataset **A-Fiji-dataset**.
 
-4. Launch Fiji.
+#. Launch Fiji.
 
-5. Go to *File > New > Script...*.
+#. Go to *File > New > Script...*.
 
-6. A dialog pops up. In the *Language* menu, select *Groovy*.
+#. A dialog pops up. In the *Language* menu, select *Groovy*.
 
-7. Copy, into the text script editor of Fiji, the content of the script \ https://raw.githubusercontent.com/ome/training-scripts/master/practical/groovy/analyse_dataset_save_rois_and_summary_table.groovy\.
+#. Copy, into the text script editor of Fiji, the content of the script \ https://raw.githubusercontent.com/ome/training-scripts/master/practical/groovy/analyse_dataset_save_rois_and_summary_table.groovy\.
 
-8. Edit the following parameters: dataset_id, USERNAME, PASSWORD.
+#. Edit the following parameters: dataset_id, USERNAME, PASSWORD.
 
-..
+   ..
 
    |image0|
 
-9.  The script will process all the Images in the specified Dataset,
+#.  The script will process all the Images in the specified Dataset,
     applying threshold, analyzing particles and saving ROIs back in
     OMERO i.e. we reproduce in a script the manual steps recorded.
     Further, it will create a CSV and OMERO.table to be attached to
     that Dataset in OMERO. Both are not necessary when analysing
     data, this is mainly to show how it we
 
-10. Click *Run*.
+#. Click *Run*.
 
-11. Return to OMERO.web and open an Image from this Dataset in
-    OMERO.iviewer.
+#. Return to OMERO.web and open an Image from this Dataset in OMERO.iviewer.
 
-12. Click the *ROIs* tab to see the added ROIs. Note that the ROIs have
-    been assigned a Channel index to indicate which Channel they were
-    derived from.
+#. Click the *ROIs* tab to see the added ROIs. Note that the ROIs have been assigned a Channel index to indicate which Channel they were derived from.
 
-13. In the *Settings* tab, turning channels on/off will also show/hide
-    ROIs assigned to those channels.
+#. In the *Settings* tab, turning channels on/off will also show/hide
+   ROIs assigned to those channels.
 
-14. Open the image in OMERO.figure for a quick publication by going to
-    Info tab in iviewer and clicking on OMERO.figure in the Open with
-    line.\ |image1|
+#. Open the image in OMERO.figure for a quick publication by going to
+   Info tab in iviewer and clicking on OMERO.figure in the Open with
+   line.\ |image1|
 
-15. This script was used previously to run on the whole **idr0021** Project
-    and produce the resulting CSV file. We can now download this file
-    from OMERO and open it in Microsoft Excel.
+#. This script was used previously to run on the whole **idr0021** Project
+   and produce the resulting CSV file. We can now download this file
+   from OMERO and open it in Microsoft Excel.
 
-16. In Excel, select the Dataset column and the column bounding_box and
-    then click on *Insert > X Y Scatter > Scatter*\ |image2|\.
-    Depending on the version of Excel you are using, this option
-    might not be available.
+#. In Excel, select the Dataset column and the column bounding_box and
+   then click on *Insert > X Y Scatter > Scatter*\ |image2|\.
+   Depending on the version of Excel you are using, this option
+   might not be available.
 
-..
+   ..
 
    |image3|
 
