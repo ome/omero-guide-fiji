@@ -12,3 +12,4 @@ Contents:
    manual_analysis
    threshold_manual
    threshold_scripting
+   headless_notebook
