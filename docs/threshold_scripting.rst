@@ -4,7 +4,7 @@ Segment OMERO data using the Scripting editor in Fiji
 **Description:**
 ----------------
 
-The following workflows should work
+The following workflows should work in
 Fiji, after these have been correctly set up with the OMERO plugin for
 Fiji/ImageJ.
 
