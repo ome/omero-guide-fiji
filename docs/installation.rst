@@ -33,17 +33,17 @@ common steps:
 
 .. image:: images/setup1.png
 
--  Extract the downloaded .zip archive. Remember where you extracted it to.
+-  For recent plugin versions (5.5.8 and higher): Note where you the downloaded the omero_ij-5.x.x-all.jar file. Copy that file into the *plugins* folder of Fiji.
 
--  Copy the extracted folder and paste it to the *plugins* folder
-   of Fiji.
+-  For plugin versions lower than 5.5.8: Extract the downloaded .zip archive. Remember where you extracted it to.
 
--  **Note:** Some Windows unzip apps create a double folder enclosing the
+-  For plugin versions lower than 5.5.8: Copy the extracted folder and paste it to the *plugins* folder of Fiji.
+
+-  **Note:** For plugin versions lower than 5.5.8: Some Windows unzip apps create a double folder enclosing the
    plugin. If that is the case, copy the inner OMERO.imagej-5.x.x
    folder into *Fiji.app > plugins* folder.
 
--  Now, restart Fiji. If you are using ImageJ, follow with the
-   additional step below.
+-  Now, restart Fiji. If you are using ImageJ, follow with the additional step below.
 
 **Installation of Bio-Formats Package, ImageJ only:**
 
