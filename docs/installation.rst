@@ -28,20 +28,20 @@ required to connect to OMERO using the Script Editor of Fiji.
 Installation of the OMERO.imagej plugin for Fiji and ImageJ, the
 common steps:
 
+-  Find the Plugins folder of your Fiji application and check if it contains any old omero_ij-5.x.x-all.jar file(s) or OMERO.imagej-5.x.x folder(s). Remove any such jar files or folders from the Plugins folder.
+
 -  Download from \ https://www.openmicroscopy.org/omero/downloads \
    the latest 5.x.x version of ImageJ/Fiji plugin for OMERO
 
 .. image:: images/setup1.png
 
--  For recent plugin versions (5.5.8 and higher): Note where you the downloaded the omero_ij-5.x.x-all.jar file. Copy that file into the *plugins* folder of Fiji.
+-  For recent plugin versions (5.5.7 and higher): Note where you the downloaded the omero_ij-5.x.x-all.jar file. Copy that file into the *plugins* folder of Fiji.
 
--  For plugin versions lower than 5.5.8: Extract the downloaded .zip archive. Remember where you extracted it to.
+-  For plugin versions lower than 5.5.7: Extract the downloaded .zip archive. Remember where you extracted it to.
 
--  For plugin versions lower than 5.5.8: Copy the extracted folder and paste it to the *plugins* folder of Fiji.
+-  For plugin versions lower than 5.5.7: Copy the extracted folder and paste it to the *plugins* folder of Fiji.
 
--  **Note:** For plugin versions lower than 5.5.8: Some Windows unzip apps create a double folder enclosing the
-   plugin. If that is the case, copy the inner OMERO.imagej-5.x.x
-   folder into *Fiji.app > plugins* folder.
+-  **Note:** For plugin versions lower than 5.5.7: Some Windows unzip apps create a double folder enclosing the plugin. If that is the case, copy the inner OMERO.imagej-5.x.x folder into *Fiji.app > plugins* folder.
 
 -  Now, restart Fiji. If you are using ImageJ, follow with the additional step below.
 
