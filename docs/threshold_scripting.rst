@@ -94,7 +94,8 @@ See \ https://docs.openmicroscopy.org/latest/omero/developers/Java.html\ ,
    Info tab in iviewer and clicking on OMERO.figure in the Open with
    line.\ |image1|
 
-#. This script was used previously to run on the whole **idr0021** Project
+#. The script at https://github.com/ome/training-scripts/blob/master/practical/groovy/idr0021.groovy
+   was used previously to run on the whole **idr0021** Project
    and produce the resulting CSV file. We can now download this file
    from OMERO and open it in Microsoft Excel.
 
