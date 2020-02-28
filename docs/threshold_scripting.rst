@@ -52,7 +52,13 @@ Let’s go over the script to understand the logic and see how it matches
 the UI steps.
 
 This script explores the JAVA API using Groovy.
-See \ https://docs.openmicroscopy.org/latest/omero/developers/Java.html\ ,
+See \ https://docs.openmicroscopy.org/latest/omero/developers/Java.html\ .
+
+It will process all the Images in the specified Dataset,
+applying threshold, analyzing particles and saving ROIs back in
+OMERO i.e. we reproduce in a script the manual steps recorded.
+Further, it will create a CSV and OMERO.table to be attached to
+that Dataset in OMERO.
 
 #. In your browser, go to the server address provided.
 
@@ -68,18 +74,7 @@ See \ https://docs.openmicroscopy.org/latest/omero/developers/Java.html\ ,
 
 #. Copy, into the text script editor of Fiji, the content of the script \ https://raw.githubusercontent.com/ome/training-scripts/master/practical/groovy/analyse_dataset_save_rois_and_summary_table.groovy\.
 
-#. Edit the following parameters: dataset_id, USERNAME, PASSWORD.
-
-   ..
-
-   |image0|
-
-#.  The script will process all the Images in the specified Dataset,
-    applying threshold, analyzing particles and saving ROIs back in
-    OMERO i.e. we reproduce in a script the manual steps recorded.
-    Further, it will create a CSV and OMERO.table to be attached to
-    that Dataset in OMERO. Both are not necessary when analysing
-    data, this is mainly to show how it we
+#. You will be asked to enter your login credentials when you run the script.
 
 #. Click *Run*.
 
@@ -122,9 +117,6 @@ See \ https://docs.openmicroscopy.org/latest/omero/developers/Java.html\ ,
     *Info* tab in OMERO.iviewer and clicking on OMERO.figure in the *Open with*
     line.\ |image4|\.
 
-.. |image0| image:: images/threshold_script1.png
-   :width: 4.76563in
-   :height: 5.0257in
 .. |image1| image:: images/threshold_script2.png
    :width: 1.89583in
    :height: 0.36458in
