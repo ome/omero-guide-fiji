@@ -106,16 +106,6 @@ that Dataset in OMERO.
 17. This will create a scatter plot. Right-click into the Chart now and
     select *Change chart type > Statistical > Box and Whisker*.
 
-18. Click the *ROIs* tab to see the added ROIs. Note that the ROIs have
-    been assigned a Channel index to indicate which Channel they were
-    derived from.
-
-19. In the *Settings* tab, turning channels on/off will also show/hide ROIs
-    assigned to those channels.
-
-20. Open the image in OMERO.figure for a quick publication by going to
-    *Info* tab in OMERO.iviewer and clicking on OMERO.figure in the *Open with*
-    line.\ |image4|\.
 
 .. |image1| image:: images/threshold_script2.png
    :width: 1.89583in
@@ -126,6 +116,3 @@ that Dataset in OMERO.
 .. |image3| image:: images/threshold_script4.png
    :width: 1.125in
    :height: 1.38542in
-.. |image4| image:: images/threshold_script2.png
-   :width: 1.89583in
-   :height: 0.36458in
