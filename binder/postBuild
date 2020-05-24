@@ -46,7 +46,7 @@ popd
 mkdir Desktop
 
 # Copy the script to the Desktop
-# cp -R $REPO_DIR/scripts Desktop
+cp -R $REPO_DIR/scripts Desktop
 
 cp $REPO_DIR/jupyter_desktop/share/*.desktop Desktop
 chmod +x Desktop/*.desktop
