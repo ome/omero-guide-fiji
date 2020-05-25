@@ -1,6 +1,6 @@
 /*
  * -----------------------------------------------------------------------------
- *  Copyright (C) 2018 University of Dundee. All rights reserved.
+ *  Copyright (C) 2018-2020 University of Dundee. All rights reserved.
  *
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -34,8 +34,7 @@
 
 #@ String(label="Username") USERNAME
 #@ String(label="Password", style='password') PASSWORD
-#@ String(label="Host", value='workshop.openmicroscopy.org') HOST
-#@ Integer(label="Port", value=4064) PORT
+#@ String(label="Host", value='wss://workshop.openmicroscopy.org/omero-ws') HOST
 #@ Integer(label="Dataset ID", value=2331) dataset_id
 
 import java.util.ArrayList
@@ -69,7 +68,6 @@ def connect_to_omero() {
 
     credentials = new LoginCredentials()
     credentials.getServer().setHostname(HOST)
-    credentials.getServer().setPort(PORT)
     credentials.getUser().setUsername(USERNAME.trim())
     credentials.getUser().setPassword(PASSWORD.trim())
     simpleLogger = new SimpleLogger()
@@ -97,7 +95,7 @@ def get_image_ids(gateway, ctx, dataset_id) {
 }
 
 
-def open_image_plus(HOST, USERNAME, PASSWORD, PORT, group_id, image_id) {
+def open_image_plus(HOST, USERNAME, PASSWORD, group_id, image_id) {
     "Open the image using the Bio-Formats Importer"
 
     StringBuilder options = new StringBuilder()
@@ -106,7 +104,7 @@ def open_image_plus(HOST, USERNAME, PASSWORD, PORT, group_id, image_id) {
     options.append("\nuser=")
     options.append(USERNAME.trim())
     options.append("\nport=")
-    options.append(PORT)
+    options.append(443)
     options.append("\npass=")
     options.append(PASSWORD.trim())
     options.append("\ngroupID=")
@@ -160,7 +158,7 @@ ids = get_image_ids(gateway, ctx, dataset_id)
 
 ids.each() { id ->
     // Open the image
-    open_image_plus(HOST, USERNAME, PASSWORD, PORT, group_id, String.valueOf(id))
+    open_image_plus(HOST, USERNAME, PASSWORD, group_id, String.valueOf(id))
     imp = IJ.getImage()
     // Analyse the images. This section could be replaced by any other macro
     IJ.run("8-bit");

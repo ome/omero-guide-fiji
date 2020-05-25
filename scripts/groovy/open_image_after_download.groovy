@@ -1,6 +1,6 @@
 /*
  * -----------------------------------------------------------------------------
- *  Copyright (C) 2018 University of Dundee. All rights reserved.
+ *  Copyright (C) 2018-2020 University of Dundee. All rights reserved.
  *
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -31,8 +31,7 @@
  */
 #@ String(label="Username") USERNAME
 #@ String(label="Password", style='password') PASSWORD
-#@ String(label="Host", value='workshop.openmicroscopy.org') HOST
-#@ Integer(label="Port", value=4064) PORT
+#@ String(label="Host", value='wss://workshop.openmicroscopy.org/omero-ws') HOST
 #@ Integer(label="Image ID", value=2331) image_id
 
 
@@ -53,7 +52,6 @@ def connect_to_omero() {
 
     credentials = new LoginCredentials()
     credentials.getServer().setHostname(HOST)
-    credentials.getServer().setPort(PORT)
     credentials.getUser().setUsername(USERNAME.trim())
     credentials.getUser().setPassword(PASSWORD.trim())
     simpleLogger = new SimpleLogger()

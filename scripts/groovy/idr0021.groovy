@@ -1,6 +1,6 @@
 /*
  * -----------------------------------------------------------------------------
- *  Copyright (C) 2018 University of Dundee. All rights reserved.
+ *  Copyright (C) 2018-2020 University of Dundee. All rights reserved.
  *
  *
  *  This program is free software; you can redistribute it and/or modify
@@ -21,7 +21,7 @@
 
 /*
  * This Groovy script uses ImageJ to analyse particles.
-* The generated ROIs are then saved back to OMERO.
+ * The generated ROIs are then saved back to OMERO.
  * We create a summary CSV and a summary table of the measurement and attach
  * them to the dataset.
  * Use this script in the Scripting Dialog of Fiji (File > New > Script).
@@ -35,8 +35,7 @@
 
 #@ String(label="Username") USERNAME
 #@ String(label="Password", style='password') PASSWORD
-#@ String(label="Host", value='workshop.openmicroscopy.org') HOST
-#@ Integer(label="Port", value=4064) PORT
+#@ String(label="Host", value='wss://workshop.openmicroscopy.org/omero-ws') HOST
 #@ Integer(label="Project ID", value=2331) project_id
 
 import java.util.ArrayList
@@ -100,7 +99,6 @@ def connect_to_omero() {
 
     credentials = new LoginCredentials()
     credentials.getServer().setHostname(HOST)
-    credentials.getServer().setPort(PORT)
     credentials.getUser().setUsername(USERNAME.trim())
     credentials.getUser().setPassword(PASSWORD.trim())
     simpleLogger = new SimpleLogger()
@@ -124,7 +122,6 @@ def get_images(gateway, ctx, dataset_id) {
     "List all images contained in a Dataset"
 
     browse = gateway.getFacility(BrowseFacility)
-
     ids = new ArrayList(1)
     ids.add(new Long(dataset_id))
     return browse.getImagesForDatasets(ctx, ids)
@@ -176,7 +173,7 @@ def get_channel_wavelength(gateway, ctx, image_id, dataset_name) {
 }
 
 
-def open_image_plus(HOST, USERNAME, PASSWORD, PORT, group_id, image_id) {
+def open_image_plus(HOST, USERNAME, PASSWORD, group_id, image_id) {
     "Open the image using the Bio-Formats Importer"
 
     StringBuilder options = new StringBuilder()
@@ -185,7 +182,7 @@ def open_image_plus(HOST, USERNAME, PASSWORD, PORT, group_id, image_id) {
     options.append("\nuser=")
     options.append(USERNAME.trim())
     options.append("\nport=")
-    options.append(PORT)
+    options.append(443)
     options.append("\npass=")
     options.append(PASSWORD.trim())
     options.append("\ngroupID=")
@@ -465,7 +462,7 @@ datasets.each() { d ->
                 }
             }
         }
-        open_image_plus(HOST, USERNAME, PASSWORD, PORT, group_id, id)
+        open_image_plus(HOST, USERNAME, PASSWORD, group_id, id)
         imp = IJ.getImage()
         // Some analysis which creates ROI's and Results Table
         IJ.run("8-bit")
