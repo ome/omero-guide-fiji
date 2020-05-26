@@ -1,0 +1,7 @@
+#!/bin/sh
+set -eux
+
+export DISPLAY=:1.0
+ln -s "$CONDA_DIR/vnc/Desktop"
+
+exec "$@"
