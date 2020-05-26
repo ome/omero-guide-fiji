@@ -316,6 +316,7 @@ table_columns = null
 count = 0
 //Close all windows before starting
 IJ.run("Close All")
+RoiManager.getRoiManager()
 images.each() { image ->
     // Open the image
     id = image.getId()
