@@ -6,6 +6,9 @@ Description:
 
 This section shows how to use ImageJ as a Python library to analyze data in OMERO.
 
+Using the Python API allows us to easily load the 2D-plane we need to see or analyze.
+This is much easier that when using the Java API and Bio-Formats plugin.
+
 We will show in the notebooks:
 
 - How to start ImageJ in Python
