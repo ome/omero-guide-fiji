@@ -13,3 +13,4 @@ Contents:
    threshold_manual
    threshold_scripting
    headless_notebook
+   imagej_python
