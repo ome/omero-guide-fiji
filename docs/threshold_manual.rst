@@ -123,8 +123,8 @@ Using the User Interface of the OMERO plugin, we will show:
        then be downloaded at any time.
 
 #. To save the recorded macro to OMERO.server:
-    -  In Fiji, find the Recorder window and click "Create". A new window will pop up with the macro you just recorded. Verify the macro on a new image. Once the verification succeeds, just close the macro window and in the dialog which pops up select "Yes" to save the macro. Save the macro locally (naded e.g. "your-macco-name.ijm").
-    -  In OMERO.web, select the dataset you would like the macro to be run on and attach the "your-macro-name.ijm" macro you just recorded as file attachment to that dataset. The attachment can then be downloaded at any time. Also, the attached macro can be used by Fiji scripts - see example on https://omero-guides.readthedocs.io/en/latest/fiji/docs/threshold_scripting.html
+    -  In Fiji, find the Recorder window and click "Create". A new window will pop up with the macro you just recorded. Verify the macro on a new image. Once the verification succeeds, just close the macro window and in the dialog which pops up select "Yes" to save the macro. Save the macro locally e.g. "your-macro-name.ijm".
+    -  In OMERO.web, select the dataset you would like the macro to be run on and attach the "your-macro-name.ijm" macro you just recorded as file attachment to that dataset. The attachment can then be downloaded at any time. Also, the attached macro can be used by Fiji scripts - see example on `threshold_scripting.html <https://omero-guides.readthedocs.io/en/latest/fiji/docs/threshold_scripting.html>`_.
 
 .. |image0| image:: images/manual1.png
    :width: 0.24105in

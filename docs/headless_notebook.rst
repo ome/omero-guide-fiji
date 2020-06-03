@@ -26,14 +26,12 @@ See also
 **Resources:**
 
 -  Data: Samples images from the Image Data Resource (IDR) \ https://idr.openmicroscopy.org/webclient/?show=project-51
--  Notebooks https://github.com/ome/training-notebooks/tree/master/Fiji 
--  Macro: https://github.com/ome/training-scripts/blob/master/practical/other/fiji-macro-segment.ijm
+-  Macro: :download:`fiji-macro-segment.ijm <../scripts/fiji-macro-segment.ijm>`
 
 **Step-by-Step**
 ----------------
 
-#.  Create a Fiji macro, for example by recording it and save it locally. You can for example use adjusted macro created in :doc:`threshold_manual`.
-    See https://github.com/ome/training-scripts/blob/master/practical/other/fiji-macro-segment.ijm.
+#.  Create a Fiji macro, for example by recording it and save it locally. You can for example use adjusted macro created in :doc:`threshold_manual`. See :download:`fiji-macro-segment.ijm <../scripts/fiji-macro-segment.ijm>`.
 
     **Note:** Not all commands which can be run and recorded in the Fiji user interface can be also run in the Fiji in headless mode. 
 
@@ -43,7 +41,7 @@ See also
 
 #.  Make sure you are selecting your own data. Select the Dataset **A-Fiji-dataset**.
 
-#.  Open the *Attachments* harmonica in the right-hand panel and click on the plus icon. Browse and attach the `Fiji macro <https://github.com/ome/training-scripts/blob/master/practical/other/fiji-macro-segment.ijm>`_ to this Dataset as File Annotation.
+#.  Open the *Attachments* harmonica in the right-hand panel and click on the plus icon. Browse and attach the :download:`fiji-macro-segment.ijm <../scripts/fiji-macro-segment.ijm>` to this Dataset as File Annotation.
 
 #.  Go to https://idr-analysis.openmicroscopy.org/training
 
