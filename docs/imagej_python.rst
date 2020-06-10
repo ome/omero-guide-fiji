@@ -20,6 +20,17 @@ We will show in the notebooks:
 Setup
 -----
 
+For using the Python examples and notebooks of this guide we recommend using Conda (Option 1).
+Conda manages programming environments in a manner similar to 
+`virtualenv <https://virtualenv.pypa.io/en/stable/>`_.
+
+Alternatively you can use ``repo2docker`` to build and run a Docker image locally (Option 2).
+This Docker image will provide the Conda environment and Jupyter notebooks with some image 
+analysis workflows.
+
+*Option 1*
+~~~~~~~~~~
+
 Install omero-py and `pyimagej <https://pypi.org/project/pyimagej/>`_ via Conda:
 
 - Install `Miniconda <https://docs.conda.io/en/latest/miniconda.html>`_ if necessary.
@@ -36,6 +47,38 @@ Install omero-py and `pyimagej <https://pypi.org/project/pyimagej/>`_ via Conda:
 
     $ conda install -c ome omero-py
 
+*Option 2*
+~~~~~~~~~~
+
+Create a local Docker Image using ``repo2docker``, see :download:`README.md <https://github.com/ome/omero-guide-python/blob/master/README.md>`::
+
+    $ pip install jupyter-repo2docker
+    $ git clone https://github.com/ome/omero-guide-fiji.git
+    $ cd omero-guide-fiji
+    $ repo2docker .
+
+When the Image is ready:
+
+- Copy the URL displayed in the terminal in your favorite browser
+
+- Click the ``New`` button on the right-hand side of the window
+
+- Select ``Terminal``
+
+.. image:: images/terminal.png
+
+- A Terminal will open in a new Tab
+
+- A Conda environment has already been created when the Docker Image was built
+
+- To list all the Conda environments, run::
+
+    $ conda env list
+
+- The environment with the OMERO Python bindings and a few other libraries is named ``notebook``, activate it::
+
+    $ conda activate notebook
+
 Step-by-Step
 ------------
 
@@ -48,6 +91,7 @@ see `ImageJ Tutorials <https://nbviewer.jupyter.org/github/imagej/tutorials/blob
 To run the macro, we use ImageJ1 windows so it requires using ImageJ in GUI mode and requires handling the resulting windows. This is the reason the parameter `headless` is set to `False`.
 If you are running the example in the Docker container, 
 you will also need to start UI environment if it is not already up.
+If you have used the option 2 above, select ``desktop`` to start the UI environment.
 
 If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment and do **not** need to set the `headless` parameter (default is `True`).
 
