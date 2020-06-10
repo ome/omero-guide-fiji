@@ -22,7 +22,6 @@
 
 # Imports
 import imagej
-from jnius import autoclass
 from omero.gateway import BlitzGateway
 
 # Step 1 - Load-Fiji
@@ -71,6 +70,7 @@ def analyse(ij, conn, image_id):
     image = conn.getObject("Image", image_id)
     # -
     plane = load_plane(image)
+    from jnius import autoclass
     WindowManager = autoclass('ij.WindowManager')
     ij.ui().show('Image', ij.py.to_java(plane))
     macro = """run("8-bit")"""
@@ -83,9 +83,12 @@ def main():
                          ") or "wss://idr.openmicroscopy.org/omero-ws"
         username = "public"
         password = "public"
-        image_id = int(input("Image ID [28662]: ") or 28662)
+        image_id = int(input("Image ID [1884807]: ") or 1884807)
+        print("initializing fiji...")
         ij = start_fiji()
+        print("connecting to IDR...")
         conn = connect(hostname, username, password)
+        print("running the macro...")
         analyse(ij, conn, image_id)
     finally:
         if conn:
