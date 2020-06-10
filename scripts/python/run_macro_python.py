@@ -24,6 +24,7 @@
 import imagej
 from omero.gateway import BlitzGateway
 
+
 # Step 1 - Load-Fiji
 def start_fiji():
     ij = imagej.init('/srv/conda/vnc/Fiji.app', headless=False)
@@ -54,6 +55,7 @@ def disconnect(conn):
     """
     conn.close()
 
+
 # Step 4 - Load plane as 2D numpy array
 def load_plane(image):
     """
@@ -71,7 +73,7 @@ def analyse(ij, conn, image_id):
     # -
     plane = load_plane(image)
     from jnius import autoclass
-    WindowManager = autoclass('ij.WindowManager')
+    autoclass('ij.WindowManager')
     ij.ui().show('Image', ij.py.to_java(plane))
     macro = """run("8-bit")"""
     ij.py.run_macro(macro)
