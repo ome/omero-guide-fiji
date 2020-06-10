@@ -29,14 +29,15 @@ Install omero-py and `pyimagej <https://pypi.org/project/pyimagej/>`_ via Conda:
 
 - Create a programming environment using Conda and activate it::
 
-    $ conda create -n fiji_python python=3.6
+    $ conda create -n imagej_python python=3.6
 
-    $ conda activate fiji_python
+    $ conda activate imagej_python
 
 - Install omero-py and `pyimagej <https://pypi.org/project/pyimagej/>`_::
 
     $ conda install -c conda-forge pyimagej
 
     $ conda install -c ome omero-py
+
 
 
