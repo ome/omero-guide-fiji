@@ -50,7 +50,7 @@ Install omero-py and `pyimagej <https://pypi.org/project/pyimagej/>`_ via Conda:
 *Option 2*
 ~~~~~~~~~~
 
-Create a local Docker Image using ``repo2docker``, see :download:`README.md <https://github.com/ome/omero-guide-python/blob/master/README.md>`::
+Create a local Docker Image using ``repo2docker``, see :download:`README.md <https://github.com/ome/omero-guide-fiji/blob/master/README.md>`::
 
     $ pip install jupyter-repo2docker
     $ git clone https://github.com/ome/omero-guide-fiji.git
