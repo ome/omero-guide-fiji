@@ -88,10 +88,7 @@ One of the advantage of this approach is that we can load only the 2D-planes we 
 In this example, Fiji has been installed locally. It is possible to install Fiji "on the fly",
 see `ImageJ Tutorials <https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ-Tutorials-and-Demo.ipynb>`_ for more options.
 
-To run the macro, we use ImageJ1 graphical user interface (GUI) elements, and thus it requires using ImageJ in GUI mode. In this GUI mode, the resulting windows content is handled. This is the reason for the parameter `headless` to be set to `False`.
-If you are running the example in the Docker container, 
-you will also need to start UI environment if it is not already up.
-If you have used the option 2 above, select ``desktop`` to start the UI environment.
+
 
 If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment and do **not** need to set the `headless` parameter (default is `True`).
 
@@ -101,7 +98,10 @@ Modules and methods which need to be imported:
     :start-after: # Imports
     :end-before: # Step 1
 
-Load Fiji. If you run the script locally, point to your local installation of Fiji or load Fiji "on the fly":
+Load Fiji. If you run the script locally, point to your local installation of Fiji or load Fiji "on the fly". To run the macro, we use ImageJ1 graphical user interface (GUI) elements, and thus it requires using ImageJ in GUI mode. In this GUI mode, the resulting windows content is handled. This is the reason for the parameter `headless` to be set to `False`.
+If you are running the example in the Docker container, 
+you will also need to start UI environment if it is not already up.
+If you have used the option 2 above, select ``desktop`` to start the UI environment:
 
 .. literalinclude:: ../scripts/python/run_macro_python.py
     :start-after: # Step 1
