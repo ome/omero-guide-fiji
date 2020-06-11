@@ -63,9 +63,9 @@ When the Image is ready:
 
 - Click the ``New`` button on the right-hand side of the window
 
-- Select ``Terminal``
+- Select ``Terminal`` 
 
-.. image:: images/terminal.png
+    \ |image0|
 
 - A Terminal will open in a new Tab
 
@@ -133,3 +133,8 @@ Wrap it all up in an ``analyse`` method and call it from ``main``:
 
 .. literalinclude:: ../scripts/python/run_macro_python.py
     :start-after: # Step 5
+
+
+.. |image0| image:: images/terminal.png
+   :width: 1.0in
+   :height: 2.24105in
