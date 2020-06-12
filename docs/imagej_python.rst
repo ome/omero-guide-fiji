@@ -92,7 +92,7 @@ If you have used the option 2 above, select ``desktop`` to start the UI environm
 
     \ |image0|
 
-If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment and do **not** need to set the `headless` parameter (default is `True`).
+If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment.
 You can now run the script. To run the script, go to the folder ``scripts/python`` and run::
 
     $ python run_macro_python.py
