@@ -88,7 +88,11 @@ One of the advantage of this approach is that we can load only the 2D-planes we 
 The script used in this document contains an ImageJ1 macro that needs graphical user interface (GUI) elements, and thus it requires using ImageJ in GUI mode. In this GUI mode, the resulting windows content is handled.
 If you are running the example in the Docker container, 
 you will also need to start UI environment if it is not already up.
-If you have used the option 2 above, select ``desktop`` to start the UI environment. If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment and do **not** need to set the `headless` parameter (default is `True`).
+If you have used the option 2 above, select ``desktop`` to start the UI environment.
+
+    \ |image0|
+
+If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment and do **not** need to set the `headless` parameter (default is `True`).
 You can now run the script. To run the script, go to the folder ``scripts/python`` and run::
 
     $ python run_macro_python.py
@@ -98,20 +102,22 @@ Below we explain the various methods in the scripts: how to start Fiji, how to l
 In this example, Fiji has been installed locally. It is possible to install Fiji "on the fly",
 see `ImageJ Tutorials <https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ-Tutorials-and-Demo.ipynb>`_ for more options.
 
+Script's description
+~~~~~~~~~~~~~~~~~~~~
 
-Modules and methods which need to be imported:
+**Import** modules needed:
 
 .. literalinclude:: ../scripts/python/run_macro_python.py
     :start-after: # Imports
     :end-before: # Step 1
 
-Load Fiji. If you run the script locally, point to your local installation of Fiji or load Fiji "on the fly". Note that the parameter `headless` has been set to `False` since we need the graphical user interface to run the ImageJ1 macro:
+**Load Fiji**. If you run the script locally, point to your local installation of Fiji or load Fiji "on the fly". Note that the parameter `headless` has been set to `False` since we need the graphical user interface to run the ImageJ1 macro:
 
 .. literalinclude:: ../scripts/python/run_macro_python.py
     :start-after: # Step 1
     :end-before: # Step 2
 
-Connect to the server. It is also important to close the connection again
+**Connect to the server**. It is also important to close the connection again
 to clear up potential resources held on the server. This is done in the 
 ``disconnect`` method:
 
@@ -119,13 +125,13 @@ to clear up potential resources held on the server. This is done in the
     :start-after: # Step 2
     :end-before: # Step 4
 
-Load an image from IDR:
+**Load an image** from IDR:
 
 .. literalinclude:: ../scripts/python/run_macro_python.py
     :start-after: # Step 3
     :end-before: # -
 
-Load the binary plane as numpy array:
+**Load the binary plane** as numpy array:
 
 .. literalinclude:: ../scripts/python/run_macro_python.py
     :start-after: # Step 4
@@ -133,7 +139,7 @@ Load the binary plane as numpy array:
 
 To be used in ImageJ, the numpy array will be converted into ImageJ types using the `to_java()` method.
 In order the use the methods implemented above in a proper standalone script:
-Wrap it all up in an ``analyse`` method and call it from ``main``:
+**Wrap it all up** in an ``analyse`` method and call it from ``main``:
 
 .. literalinclude:: ../scripts/python/run_macro_python.py
     :start-after: # Step 5
