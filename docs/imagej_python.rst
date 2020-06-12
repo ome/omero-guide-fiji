@@ -92,10 +92,11 @@ If you have used the option 2 above, select ``desktop`` to start the UI environm
 
     \ |image0|
 
-If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment.
 You can now run the script. To run the script, go to the folder ``scripts/python`` and run::
 
     $ python run_macro_python.py
+
+If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment.
 
 Below we explain the various methods in the scripts: how to start Fiji, how to load the planes to analyze and how to run an ImageJ1 macro.
 
