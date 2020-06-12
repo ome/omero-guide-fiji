@@ -84,7 +84,12 @@ Step-by-Step
 
 The script used in this document is :download:`run_macro_python.py <../scripts/python/run_macro_python.py>`.
 One of the advantage of this approach is that we can load only the 2D-planes we wish to analyze.
-To run the script, go to the folder ``scripts/python`` and run::
+
+The script used in this document contains an ImageJ1 macro that needs graphical user interface (GUI) elements, and thus it requires using ImageJ in GUI mode. In this GUI mode, the resulting windows content is handled.
+If you are running the example in the Docker container, 
+you will also need to start UI environment if it is not already up.
+If you have used the option 2 above, select ``desktop`` to start the UI environment. If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment and do **not** need to set the `headless` parameter (default is `True`).
+You can now run the script. To run the script, go to the folder ``scripts/python`` and run::
 
     $ python run_macro_python.py
 
@@ -100,10 +105,7 @@ Modules and methods which need to be imported:
     :start-after: # Imports
     :end-before: # Step 1
 
-Load Fiji. If you run the script locally, point to your local installation of Fiji or load Fiji "on the fly". To run the macro, we use ImageJ1 graphical user interface (GUI) elements, and thus it requires using ImageJ in GUI mode. In this GUI mode, the resulting windows content is handled. This is the reason for the parameter `headless` to be set to `False`.
-If you are running the example in the Docker container, 
-you will also need to start UI environment if it is not already up.
-If you have used the option 2 above, select ``desktop`` to start the UI environment. If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment and do **not** need to set the `headless` parameter (default is `True`):
+Load Fiji. If you run the script locally, point to your local installation of Fiji or load Fiji "on the fly". Note that the parameter `headless` has been set to `False` since we need the graphical user interface to run the ImageJ1 macro:
 
 .. literalinclude:: ../scripts/python/run_macro_python.py
     :start-after: # Step 1
