@@ -92,6 +92,8 @@ If you have used the option 2 above, select ``desktop`` to start the UI environm
 
     \ |image0|
 
+
+If you are using the option 1 above, you will first need to update the script to point to your local installation of Fiji or use one of the options described in `ImageJ Tutorials <https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ-Tutorials-and-Demo.ipynb>`_.
 You can now run the script. To run the script, go to the folder ``scripts/python`` and run::
 
     $ python run_macro_python.py
@@ -100,8 +102,7 @@ If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI en
 
 Below we explain the various methods in the scripts: how to start Fiji, how to load the planes to analyze and how to run an ImageJ1 macro.
 
-In this example, Fiji has been installed locally. It is possible to install Fiji "on the fly",
-see `ImageJ Tutorials <https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ-Tutorials-and-Demo.ipynb>`_ for more options.
+In this example, Fiji has been installed locally.
 
 Script's description
 ~~~~~~~~~~~~~~~~~~~~
