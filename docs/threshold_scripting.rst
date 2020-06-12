@@ -40,7 +40,7 @@ Using the Scripting editor of Fiji, we will show:
 -  Java API documentation: \ https://docs.openmicroscopy.org/latest/omero/developers/Java.html
 
 -  Script: Groovy script for automatic segmentation of images from OMERO using Fiji
-   -  https://raw.githubusercontent.com/ome/training-scripts/master/practical/groovy/analyse_dataset_save_rois_and_summary_table.groovy
+   -  :download:`analyse_dataset_save_rois_and_summary_table.groovy <../scripts/groovy/analyse_dataset_save_rois_and_summary_table.groovy>`.
 
 **Step-by-Step**
 ----------------
@@ -51,8 +51,7 @@ Dataset using the scripting facility available in Fiji.
 Let’s go over the script to understand the logic and see how it matches
 the UI steps.
 
-This script explores the JAVA API using Groovy.
-See \ https://docs.openmicroscopy.org/latest/omero/developers/Java.html\ .
+This script explores the `JAVA API <https://docs.openmicroscopy.org/latest/omero/developers/Java.html>`_ using Groovy.
 
 It will process all the Images in the specified Dataset,
 applying threshold, analyzing particles and saving ROIs back in
@@ -72,7 +71,7 @@ that Dataset in OMERO.
 
 #. A dialog pops up. In the *Language* menu, select *Groovy*.
 
-#. Copy, into the text script editor of Fiji, the content of the script \ https://raw.githubusercontent.com/ome/training-scripts/master/practical/groovy/analyse_dataset_save_rois_and_summary_table.groovy\.
+#. Copy, into the text script editor of Fiji, :download:`analyse_dataset_save_rois_and_summary_table.groovy <../scripts/groovy/analyse_dataset_save_rois_and_summary_table.groovy>`.
 
 #. You will be asked to enter your login credentials when you run the script.
 
@@ -89,7 +88,7 @@ that Dataset in OMERO.
    Info tab in iviewer and clicking on OMERO.figure in the Open with
    line.\ |image1|
 
-#. The script at https://github.com/ome/training-scripts/blob/master/practical/groovy/idr0021.groovy
+#. The script :download:`idr0021.groovy <../scripts/groovy/idr0021.groovy>`
    was used previously to run on the whole **idr0021** Project
    and produce the resulting CSV file. We can now download this file
    from OMERO and open it in Microsoft Excel.
