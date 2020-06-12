@@ -9,7 +9,7 @@ This section shows how to use ImageJ as a Python library to analyze data in OMER
 Using the Python API allows us to easily load the 2D-plane we need to see or analyze.
 This is much easier that when using the Java API and Bio-Formats plugin.
 
-We will show in the notebooks:
+We will show in the examples:
 
 - How to start ImageJ in Python.
 
@@ -84,13 +84,15 @@ Step-by-Step
 
 The script used in this document is :download:`run_macro_python.py <../scripts/python/run_macro_python.py>`.
 One of the advantage of this approach is that we can load only the 2D-planes we wish to analyze.
+To run the script, go to the folder ``scripts/python`` and run::
+
+    $ python run_macro_python.py
+
+Below we explain the various methods in the scripts: how to start Fiji, how to load the planes to analyze and how to run an ImageJ1 macro.
 
 In this example, Fiji has been installed locally. It is possible to install Fiji "on the fly",
 see `ImageJ Tutorials <https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ-Tutorials-and-Demo.ipynb>`_ for more options.
 
-
-
-If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment and do **not** need to set the `headless` parameter (default is `True`).
 
 Modules and methods which need to be imported:
 
@@ -101,7 +103,7 @@ Modules and methods which need to be imported:
 Load Fiji. If you run the script locally, point to your local installation of Fiji or load Fiji "on the fly". To run the macro, we use ImageJ1 graphical user interface (GUI) elements, and thus it requires using ImageJ in GUI mode. In this GUI mode, the resulting windows content is handled. This is the reason for the parameter `headless` to be set to `False`.
 If you are running the example in the Docker container, 
 you will also need to start UI environment if it is not already up.
-If you have used the option 2 above, select ``desktop`` to start the UI environment:
+If you have used the option 2 above, select ``desktop`` to start the UI environment. If you do not use any ImageJ1 features e.g. macro, you do **not** need the UI environment and do **not** need to set the `headless` parameter (default is `True`):
 
 .. literalinclude:: ../scripts/python/run_macro_python.py
     :start-after: # Step 1
