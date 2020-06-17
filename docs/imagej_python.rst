@@ -47,7 +47,7 @@ Install omero-py and `pyimagej <https://pypi.org/project/pyimagej/>`_ via Conda:
 
     $ conda install -c ome omero-py
 
-Note: we have noticed few problems using that approach when running the scripts on some operating systems due to some issues with the ImageJ1-ImageJ2 bridge.
+Note: we have noticed problems using the Option 1 approach when running the scripts on some operating systems due to issues with the ImageJ1-ImageJ2 bridge.
 
 *Option 2*
 ~~~~~~~~~~
