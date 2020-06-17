@@ -95,7 +95,7 @@ If you have used the option 2 above, select ``desktop`` to start the UI environm
     \ |image0|
 
 
-If you are using the option 1 above, you will first need to update the script to point to your local installation of Fiji or use one of the options described in `ImageJ Tutorials <https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ-Tutorials-and-Demo.ipynb>`_.
+If you are using the Option 1 above, you will first need to update the script to point to your local installation of Fiji or use one of the options described in `ImageJ Tutorials <https://nbviewer.jupyter.org/github/imagej/tutorials/blob/master/notebooks/ImageJ-Tutorials-and-Demo.ipynb>`_.
 You can now run the script. To run the script, go to the folder ``scripts/python`` and run::
 
     $ python run_macro_python.py
