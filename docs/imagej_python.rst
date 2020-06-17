@@ -90,7 +90,7 @@ One of the advantage of this approach is that we can load only the 2D-planes we 
 The script used in this document contains an ImageJ1 macro that needs graphical user interface (GUI) elements, and thus it requires using ImageJ in GUI mode. In this GUI mode, the resulting windows content is handled.
 If you are running the example in the Docker container, 
 you will also need to start UI environment if it is not already up.
-If you have used the option 2 above, select ``desktop`` to start the UI environment.
+If you have used the Option 2 above, select ``desktop`` to start the UI environment.
 
     \ |image0|
 
