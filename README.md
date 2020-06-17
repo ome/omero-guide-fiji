@@ -1,6 +1,9 @@
 # User guide for Fiji and OMERO
 [![Binder](https://mybinder.org/badge_logo.svg)](https://mybinder.org/v2/gh/ome/omero-guide-fiji/master?filepath=notebooks)
 
+[![Documentation Status](https://readthedocs.org/projects/omero-guide-fiji/badge/?version=latest)](https://omero-guides.readthedocs.io/en/latest/fiji/docs/index.html)
+
+The documentation is deployed at [How to use Fiji](https://omero-guides.readthedocs.io/en/latest/fiji/docs/index.html).
 
 This guide demonstrates how to analyze data stored in OMERO in Fiji.
 This can be done using the User Interface or via the scripting facility in Fiji.
