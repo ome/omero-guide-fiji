@@ -85,7 +85,7 @@ Step-by-Step
 ------------
 
 The script used in this document is :download:`run_macro_python.py <../scripts/python/run_macro_python.py>`.
-One of the advantage of this approach is that we can load only the 2D-planes we wish to analyze.
+One of the advantages of this approach is that we can load only the 2D-planes we wish to analyze.
 
 The script used in this document contains an ImageJ1 macro that needs graphical user interface (GUI) elements, and thus it requires using ImageJ in GUI mode. In this GUI mode, the resulting windows content is handled.
 If you are running the example in the Docker container, 
