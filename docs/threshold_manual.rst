@@ -1,8 +1,8 @@
 Segment manually OMERO data using Fiji/ImageJ
 =============================================
 
-**Description:**
-----------------
+Description
+-----------
 
 The following workflows should work both with ImageJ and Fiji,
 after these have been correctly set up with
@@ -19,19 +19,20 @@ Using the User Interface of the OMERO plugin, we will show:
 
 -  How to record this workflow in Fiji/ImageJ, using the *Recorder* plugin, for later use.
 
-**Setup:**
-----------
+Setup
+-----
 
 -  Fiji has been installed on the local machine with the
    OMERO.insight-ij plugin. The installation instructions can be
    found at :doc:`installation`.
 
-**Resources:**
+Resources
+---------
 
--  Samples images from the Image Data Resource (IDR) \ https://idr.openmicroscopy.org/webclient/?show=project-51
+-  Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/webclient/?show=project-51>`_.
 
-**Step-by-step:**
------------------
+Step-by-step
+------------
 
 #. Launch Fiji/ImageJ.
 

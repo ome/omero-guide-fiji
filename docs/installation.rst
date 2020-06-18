@@ -1,8 +1,8 @@
 How to install the OMERO plugin for Fiji/ImageJ
 ===============================================
 
-Description:
-------------
+Description
+-----------
 
 Fiji is a free open-source image processing package based on
 ImageJ, \ https://imagej.net/Fiji\ . The following workflow should how to
@@ -10,8 +10,8 @@ install the OMERO plugin for Fiji and ImageJ.
 
 The OMERO plugin does not have yet and update site.
 
-**Setup step-by-step:**
------------------------
+Setup step-by-step
+------------------
 
 We assume that you have already Fiji/ImageJ installed locally.
 

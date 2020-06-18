@@ -1,39 +1,47 @@
 Segment OMERO data using Fiji run headlessly in notebook
 ========================================================
 
-**Description:**
-----------------
+Description
+-----------
 
 The following examples follow up on the script shown in :doc:`threshold_scripting`.
 But, unlike in :doc:`threshold_scripting`, here, Fiji is included into a `Docker <https://www.docker.com/>`_ image and run in headless mode.
-The scripts are embedded into a Jupyter Notebook. The Groovy language is used, which is very similar to Java and can be used in Fiji scripting. The scripts show:
+The scripts are embedded into a Jupyter Notebook. The Groovy language is used, which is very similar to Java and can be used in Fiji scripting. 
 
--  How to run a Fiji macro attached to an OMERO Dataset, save ROIs, Results and Images (as OME-TIFF) to OMERO
+The first script shows:
 
--  How to crop an image in OMERO using Fiji cropping functionality.
+- How to run a Fiji macro attached to an OMERO Dataset.
+- How to save ROIs.
+- How to save the Results back to the OMERO server.
 
+The second script shows:
 
-**Setup:**
-----------
-Fiji has been installed in a Docker image.
-
-See also 
-
-- https://github.com/ome/training-notebooks/blob/master/Dockerfile
-- https://github.com/ome/training-notebooks/tree/master/Fiji
+- How to crop an image in OMERO using Fiji cropping functionality.
+- How to save the cropped image as OME-TIFF.
+- How to import the OME-TIFF image into OMERO.
 
 
-**Resources:**
+Setup
+-----
+Fiji has been installed in a Docker image using `repo2docker <https://repo2docker.readthedocs.io/>`_.
 
--  Data: Samples images from the Image Data Resource (IDR) \ https://idr.openmicroscopy.org/webclient/?show=project-51
+
+Resources
+---------
+
+
+-  Data: Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/webclient/?show=project-51>`_
 -  Macro: :download:`fiji-macro-segment.ijm <../scripts/fiji-macro-segment.ijm>`
 
-**Step-by-Step**
-----------------
+Step-by-Step
+------------
+
+**Example 1: ROIs and measurement creation**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #.  Create a Fiji macro, for example by recording it and save it locally. You can for example use adjusted macro created in :doc:`threshold_manual`. See :download:`fiji-macro-segment.ijm <../scripts/fiji-macro-segment.ijm>`.
 
-    **Note:** Not all commands which can be run and recorded in the Fiji user interface can be also run in the Fiji in headless mode. 
+    **Note:** commands which can be run and recorded in the Fiji user interface *cannot** all be run in the Fiji in headless mode. 
 
 #.  In your browser, go to the server address provided.
 
@@ -43,7 +51,7 @@ See also
 
 #.  Open the *Attachments* harmonica in the right-hand panel and click on the plus icon. Browse and attach the :download:`fiji-macro-segment.ijm <../scripts/fiji-macro-segment.ijm>` to this Dataset as File Annotation.
 
-#.  Go to https://idr-analysis.openmicroscopy.org/training
+#.  Go to `analysis-training <https://idr-analysis.openmicroscopy.org/training>`_ or `run on mybinder.org <https://mybinder.org/v2/gh/ome/omero-guide-fiji/master?filepath=notebooks>`_
 
 #.  Look under *Notebooks > Fiji* for *run_attached_macro.ipynb*.
 
@@ -57,7 +65,7 @@ See also
 
 #.  The next cell is asking for input about the types of data which should be saved back to OMERO (ROIs, Results or Images). This is of course dependent on the type of results your Macro is producing in Fiji. For this example, we select ROIs and Results.
 
-#.  The script in the next cell will process all the Images in the specified         Dataset, applying threshold, analyzing particles, i.e. steps which are captured inside your macro file. Further, it will save ROIs back in OMERO and create a CSV to be attached to each image in that Dataset in OMERO.
+#.  The script in the next cell will process all the Images in the specified Dataset, applying threshold, analyzing particles, i.e. steps which are captured inside your macro file. Further, it will save ROIs back in OMERO and create a CSV to be attached to each image in that Dataset in OMERO.
 
 #.  Return to OMERO.web and open an Image from this Dataset in OMERO.iviewer.
 
@@ -77,7 +85,8 @@ See also
 #.  In the *Settings* tab, turning channels on/off will also show/hide ROIs
     assigned to those channels.
 
-#.  Go to https://idr-analysis.openmicroscopy.org/training
+**Example 2: Cropping and import**
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 #.  Look under *Notebooks > Fiji* for *crop_image.ipynb*.
 
@@ -88,4 +97,3 @@ See also
 .. |image1| image:: images/threshold_script2.png
    :width: 1.89583in
    :height: 0.36458in
-

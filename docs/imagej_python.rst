@@ -1,8 +1,8 @@
 Use ImageJ in Python
 ====================
 
-Description:
-------------
+Description
+-----------
 
 This section shows how to use ImageJ as a Python library to analyze data in OMERO.
 

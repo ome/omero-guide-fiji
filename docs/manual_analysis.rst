@@ -1,8 +1,8 @@
 Analyze manually OMERO data using the OMERO plugin for Fiji/ImageJ
 ==================================================================
 
-**Description:**
-----------------
+Description
+-----------
 
 The following workflows should work
 both with ImageJ and Fiji, after these have been correctly set up with
@@ -19,20 +19,21 @@ Using the User Interface of the OMERO plugin, we will show:
 
 -  How to import a newly created image from Fiji/ImageJ into OMERO.
 
-**Setup:**
-----------
+Setup
+-----
 
 -  Install Fiji on the local machine with the OMERO.insight-ij plugin.
    The installation instructions can be found at :doc:`installation`.
 
-**Resources:**
+Resources
+---------
 
--  Samples images from the Image Data Resource (IDR) \ https://idr.openmicroscopy.org/webclient/?show=project-51\ .
 
-..
+-  Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/webclient/?show=project-51>`_.
 
-**Step-by-step:**
------------------
+
+Step-by-step
+------------
 
 **Example 1: ROIs and measurement creation**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -133,4 +134,3 @@ not the case, go back to the first step of Example 1.
 .. |image1| image:: images/manual1.png
    :width: 0.24105in
    :height: 0.24105in
-
