@@ -14,3 +14,8 @@ Contents:
    threshold_scripting
    headless_notebook
    imagej_python
+
+Contribute
+----------
+
+Changes to the documentation or the materials should be made directly in the `omero-guide-fiji repository <https://github.com/ome/omero-guide-fiji>`_.
