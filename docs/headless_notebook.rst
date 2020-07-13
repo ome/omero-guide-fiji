@@ -39,7 +39,7 @@ Step-by-Step
 
 #.  Open the *Attachments* harmonica in the right-hand panel and click on the plus icon. Browse and attach the :download:`fiji-macro-segment.ijm <../scripts/fiji-macro-segment.ijm>` to this Dataset as File Annotation.
 
-#.  Look under *notebooks* for *run_attached_macro.ipynb*.
+#.  Run the notebook `run_attached_macro.ipynb <https://mybinder.org/v2/gh/ome/omero-guide-fiji/master?filepath=notebooks/run_attached_macro.ipynb>.
 
 #.  Select the first Step and click on the Run button to execute each step in turn.
 
@@ -71,7 +71,7 @@ Step-by-Step
 #.  In the *Settings* tab, turning channels on/off will also show/hide ROIs
     assigned to those channels.
 
-#.  Look under *notebooks* for *crop_image.ipynb*.
+#.  Run the notebook `crop_image.ipynb <https://mybinder.org/v2/gh/ome/omero-guide-fiji/master?filepath=notebooks/crop_image.ipynb>.
 
 #.  Run through the notebook, logging in as previously and indicating the Image ID of the image you want to crop.
 
