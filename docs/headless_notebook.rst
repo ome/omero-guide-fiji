@@ -39,7 +39,7 @@ Step-by-Step
 
 #.  Open the *Attachments* harmonica in the right-hand panel and click on the plus icon. Browse and attach the :download:`fiji-macro-segment.ijm <../scripts/fiji-macro-segment.ijm>` to this Dataset as File Annotation.
 
-#.  Run the notebook `run_attached_macro.ipynb <https://mybinder.org/v2/gh/ome/omero-guide-fiji/master?filepath=notebooks/run_attached_macro.ipynb>.
+#.  Run the notebook `run_attached_macro.ipynb <https://mybinder.org/v2/gh/ome/omero-guide-fiji/master?filepath=notebooks/run_attached_macro.ipynb>`_.
 
 #.  Select the first Step and click on the Run button to execute each step in turn.
 
@@ -80,4 +80,3 @@ Step-by-Step
 .. |image1| image:: images/threshold_script2.png
    :width: 1.89583in
    :height: 0.36458in
-
