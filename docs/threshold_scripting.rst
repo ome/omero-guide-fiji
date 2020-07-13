@@ -1,8 +1,8 @@
 Segment OMERO data using the Scripting editor in Fiji
 =====================================================
 
-**Description:**
-----------------
+Description
+-----------
 
 The following workflows should work in
 Fiji, after these have been correctly set up with the OMERO plugin for
@@ -27,23 +27,24 @@ Using the Scripting editor of Fiji, we will show:
 
    -  Save them as a CSV file and link it to the Dataset.
 
-**Setup:**
-----------
+Setup
+-----
 
 -  Install Fiji on the local machine with the OMERO.insight-ij plugin.
    The installation instructions can be found at :doc:`installation`.
 
-**Resources:**
+Resources
+---------
 
--  Data: Samples images from the Image Data Resource (IDR) \ https://idr.openmicroscopy.org/webclient/?show=project-51
+-  Data: Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/webclient/?show=project-51>`_.
 
--  Java API documentation: \ https://docs.openmicroscopy.org/latest/omero/developers/Java.html
+-  `Java API documentation <https://docs.openmicroscopy.org/latest/omero/developers/Java.html>`__.
 
 -  Script: Groovy script for automatic segmentation of images from OMERO using Fiji
    -  :download:`analyse_dataset_save_rois_and_summary_table.groovy <../scripts/groovy/analyse_dataset_save_rois_and_summary_table.groovy>`.
 
-**Step-by-Step**
-----------------
+Step-by-Step
+------------
 
 We will now repeat the manual analysis :doc:`threshold_manual` on a
 Dataset using the scripting facility available in Fiji.
@@ -51,7 +52,7 @@ Dataset using the scripting facility available in Fiji.
 Let’s go over the script to understand the logic and see how it matches
 the UI steps.
 
-This script explores the `JAVA API <https://docs.openmicroscopy.org/latest/omero/developers/Java.html>`_ using Groovy.
+This script explores the `JAVA API <https://docs.openmicroscopy.org/latest/omero/developers/Java.html>`__ using Groovy.
 
 It will process all the Images in the specified Dataset,
 applying threshold, analyzing particles and saving ROIs back in
