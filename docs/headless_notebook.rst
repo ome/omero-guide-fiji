@@ -71,7 +71,7 @@ Step-by-Step
 #.  In the *Settings* tab, turning channels on/off will also show/hide ROIs
     assigned to those channels.
 
-#.  Run the notebook `crop_image.ipynb <https://mybinder.org/v2/gh/ome/omero-guide-fiji/master?filepath=notebooks/crop_image.ipynb>.
+#.  Run the notebook `crop_image.ipynb <https://mybinder.org/v2/gh/ome/omero-guide-fiji/master?filepath=notebooks/crop_image.ipynb>`_.
 
 #.  Run through the notebook, logging in as previously and indicating the Image ID of the image you want to crop.
 
