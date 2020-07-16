@@ -1,3 +1,9 @@
+0.2.0 (July 2020)
+-----------------
+
+- Add notebook for idr0021
+- Improve documentation
+
 0.1.0 (May 2020)
 ----------------
 
