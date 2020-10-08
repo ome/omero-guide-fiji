@@ -29,7 +29,7 @@ Setup
 Resources
 ---------
 
--  Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/webclient/?show=project-51>`__.
+-  Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/search/?query=Name:idr0051>`__.
 
 Step-by-step
 ------------
