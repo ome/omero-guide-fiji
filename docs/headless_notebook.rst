@@ -21,7 +21,7 @@ Fiji has been installed in a Docker image using repo2docker.
 Resources
 ---------
 
--  Data: Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/webclient/?show=project-51>`_.
+-  Data: Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/search/?query=Name:idr0051>`_.
 -  Macro: :download:`fiji-macro-segment.ijm <../scripts/fiji-macro-segment.ijm>`
 
 Step-by-Step

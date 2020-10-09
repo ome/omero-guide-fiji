@@ -31,7 +31,7 @@ chmod +x xstartup
 # Desktop applications
 # Fiji and OMERO insight
 
-OMERO_INSIGHT_VERSION=5.5.11
+OMERO_INSIGHT_VERSION=5.5.14
 OMERO_INSIGHT_URL_BASE=https://github.com/ome/omero-insight/releases/download/v$OMERO_INSIGHT_VERSION
 
 wget https://downloads.imagej.net/fiji/latest/fiji-nojre.zip
