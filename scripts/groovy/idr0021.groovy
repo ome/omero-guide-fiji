@@ -173,6 +173,15 @@ def get_channel_wavelength(gateway, ctx, image_id, dataset_name) {
 }
 
 
+def get_port(HOST) {
+    port = 4064
+    // check if websockets is used
+    if (HOST.startsWith("ws")) {
+        port = 443
+    }
+    return port
+}
+
 def open_image_plus(HOST, USERNAME, PASSWORD, group_id, image_id) {
     "Open the image using the Bio-Formats Importer"
 
@@ -182,7 +191,7 @@ def open_image_plus(HOST, USERNAME, PASSWORD, group_id, image_id) {
     options.append("\nuser=")
     options.append(USERNAME.trim())
     options.append("\nport=")
-    options.append(443)
+    options.append(get_port(HOST))
     options.append("\npass=")
     options.append(PASSWORD.trim())
     options.append("\ngroupID=")
