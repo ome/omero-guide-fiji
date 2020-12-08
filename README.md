@@ -3,6 +3,10 @@
 
 [![Documentation Status](https://readthedocs.org/projects/omero-guide-fiji/badge/?version=latest)](https://omero-guides.readthedocs.io/en/latest/fiji/docs/index.html)
 
+[![Actions Status](https://github.com/ome/omero-guide-fiji/workflows/repo2docker/badge.svg)](https://github.com/ome/omero-guide-fiji/actions)
+
+[![Actions Status](https://github.com/ome/omero-guide-fiji/workflows/sphinx/badge.svg)](https://github.com/ome/omero-guide-fiji/actions)
+
 The documentation is deployed at [How to use Fiji](https://omero-guides.readthedocs.io/en/latest/fiji/docs/index.html).
 
 This guide demonstrates how to analyze data stored in OMERO in Fiji.
