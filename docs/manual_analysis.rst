@@ -28,7 +28,7 @@ Setup
 Resources
 ---------
 
--  Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/search/?query=Name:idr0051>`__.
+-  Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/search/?query=Name:idr0021>`__.
 
 
 Step-by-step
