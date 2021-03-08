@@ -5,10 +5,10 @@ Description
 -----------
 
 `Fiji <https://imagej.net/Fiji>`__ is a free open-source image processing package based on
-ImageJ. The following workflow should how to
+ImageJ. The following workflow shows how to
 install the OMERO plugin for Fiji and ImageJ.
 
-The OMERO plugin does not have yet and update site.
+The OMERO plugin does not have an update site yet.
 
 Setup step-by-step
 ------------------
@@ -16,16 +16,16 @@ Setup step-by-step
 We assume that you have already Fiji/ImageJ installed locally.
 
 In this section, we will cover the steps required to install the
-OMERO.imagej plugin for Fiji. If you wish to install it for ImageJ,
+OMERO plugin for Fiji. If you wish to install it for ImageJ,
 an additional step is needed.
 
-We first describe how the common installation steps for ImageJ and Fiji.
+We first describe the common installation steps for ImageJ and Fiji.
 We then describe how to install the *Bio-Formats Package* for ImageJ.
 
-Installing the OMERO.imagej plugin also adds the dependencies
+Installing the OMERO plugin in Fiji also adds the dependencies
 required to connect to OMERO using the Script Editor of Fiji.
 
-Installation of the OMERO.imagej plugin for Fiji and ImageJ, the
+Installation of the OMERO plugin for Fiji and ImageJ, the
 common steps:
 
 -  Find the Plugins folder of your Fiji application and check if it contains any old omero_ij-5.x.x-all.jar file(s) or OMERO.imagej-5.x.x folder(s). Remove any such jar files or folders from the Plugins folder.
