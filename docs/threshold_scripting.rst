@@ -36,7 +36,7 @@ Setup
 Resources
 ---------
 
--  Data: Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/search/?query=Name:idr0051>`_.
+-  Data: Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/search/?query=Name:idr0021>`_.
 
 -  `Java API documentation <https://docs.openmicroscopy.org/latest/omero/developers/Java.html>`__.
 
