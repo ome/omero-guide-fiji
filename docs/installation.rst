@@ -35,7 +35,7 @@ common steps:
 
 .. image:: images/setup1.png
 
--  For recent plugin versions (5.5.7 and higher): Note where you the downloaded the omero_ij-5.x.x-all.jar file. Copy that file into the *plugins* folder of Fiji.
+-  For recent plugin versions (5.5.7 and higher): Note where you downloaded the omero_ij-5.x.x-all.jar file. Copy that file into the *plugins* folder of Fiji.
 
 -  For plugin versions lower than 5.5.7: Extract the downloaded .zip archive. Remember where you extracted it to.
 
