@@ -73,7 +73,7 @@ In this first example we show how to open an OMERO image in Fiji, draw ROIs, mea
 
 #. Move to another channel, using the *c slider*.
 
-#. Draw other shapes if desired. Add drawing a shape. Click *Add [t]* to add it to the ROI Manager.
+#. Draw other shapes if desired. Click *Add [t]* to add them to the ROI Manager.
 
 #. When done with the drawing, click the button *Measure* in the ROI Manager.
 
@@ -81,7 +81,7 @@ In this first example we show how to open an OMERO image in Fiji, draw ROIs, mea
 
 #. To save the ROI and the measurement back to OMERO, go to *Plugins > OMERO > Save ROIs To OMERO*.
 
-#. In the dialog popping up, under the *Save* section select *ROI and Measurements*.
+#. In the dialog popping up, under the *Save* section select *ROI* and *Measurements*.
 
 #. The measurements are saved back to OMERO as a CSV file and linked to the Image.
 
