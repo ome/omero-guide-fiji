@@ -73,7 +73,7 @@ In this first example we show how to open an OMERO image in Fiji, draw ROIs, mea
 
 #. Move to another channel, using the *c slider*.
 
-#. Draw other shapes if desired. Add drawing a shape. Click *Add [t]* to add it to the Manager.
+#. Draw other shapes if desired. Click *Add [t]* to add them to the ROI Manager.
 
 #. When done with the drawing, click the button *Measure* in the ROI Manager.
 
@@ -81,17 +81,17 @@ In this first example we show how to open an OMERO image in Fiji, draw ROIs, mea
 
 #. To save the ROI and the measurement back to OMERO, go to *Plugins > OMERO > Save ROIs To OMERO*.
 
-#. In the dialog popping up, under the *Save* section select ROI and Measurements.
+#. In the dialog popping up, under the *Save* section select *ROI* and *Measurements*.
 
 #. The measurements are saved back to OMERO as a CSV file and linked to the Image.
 
    .. image:: images/manual4.png
 
-#. Go back to OMERO.web, in the right-hand panel.
+#. Go to OMERO.web and log in.
 
 #. Select the image opened in Fiji/ImageJ.
 
-#. Check that there is a new CSV file under the Attachments harmonica.
+#. Check that there is a new CSV file under the *Attachments* harmonica.
 
 #. Open the image in OMERO.iviewer to the see the ROIs and make sure that you can interact with them.
 
@@ -104,7 +104,7 @@ import the cropped image back to OMERO as OME-TIFF.
 In this example we assume that the user is already logged in. If this is
 not the case, go back to the first step of Example 1.
 
-#. Select the *A-Fiji-dataset* Dataset.
+#. Select a dataset, for example the *A-Fiji-dataset* Dataset.
 
 #. Double-click on a thumbnail or on an Image in the left-hand tree to open an Image in Fiji/ImageJ.
 
@@ -116,13 +116,13 @@ not the case, go back to the first step of Example 1.
 
 #. Go to *Plugins > OMERO > Save Image(s) To OMERO*.
 
-#. An Import dialog (specific to the OMERO Fiji/ImageJ plugin) will pop up.
+#. An Import dialog will pop up.
 
    .. image:: images/manual5.png
 
-#. Check that the option *Add Image from current window* is selected
+#. Check that the option *Add Image from current window* is selected.
 
-#. Select where to import the cropped Image e.g. **A-Fiji-dataset** Dataset.
+#. Select where to import the cropped Image, for example an existing Dataset, e.g. *A-Fiji-dataset*. You can also select *New From Folder* option which will create a new Dataset named with the name of the image you opened from OMERO to Fiji. In case you select *No Dataset* option, the new image will be displayed in the *Orphaned Images* folder in OMERO.
 
 #. Click *Add to the Queue* button.
 
