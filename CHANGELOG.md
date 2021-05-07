@@ -1,3 +1,8 @@
+0.2.1 (May 2021)
+----------------
+
+- Update broken link so VNC can be installed. [#20](https://github.com/ome/omero-guide-fiji/pull/20)
+
 0.2.0 (July 2020)
 -----------------
 
