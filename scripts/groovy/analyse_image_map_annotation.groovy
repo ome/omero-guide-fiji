@@ -50,7 +50,9 @@ import omero.gateway.LoginCredentials
 import omero.gateway.SecurityContext
 import omero.gateway.facility.BrowseFacility
 import omero.gateway.facility.DataManagerFacility
+import omero.gateway.facility.MetadataFacility
 import omero.gateway.model.ImageData
+import omero.gateway.model.AnnotationData
 import omero.gateway.model.MapAnnotationData
 import omero.log.SimpleLogger
 
@@ -154,8 +156,28 @@ data.setNameSpace(MapAnnotationData.NS_CLIENT_CREATED)
 exp = gateway.getLoggedInUser()
 group_id = exp.getGroupId()
 ctx = new SecurityContext(group_id)
+image = new ImageData(new ImageI(image_id, false))
 DataManagerFacility fac = gateway.getFacility(DataManagerFacility.class)
-fac.attachAnnotation(ctx, data, new ImageData(new ImageI(image_id, false)))
+fac.attachAnnotation(ctx, data, image)
+
+
+//Load the map annotation for the user currently logged in 
+List<Long> userIds = new ArrayList<Long>()
+userIds.add(exp.getId())
+
+println "Reading MapAnnotation..."
+List<Class<? extends AnnotationData>> types = new ArrayList<Class<? extends AnnotationData>>()
+types.add(MapAnnotationData.class)
+MetadataFacility metadata = gateway.getFacility(MetadataFacility.class)
+List<MapAnnotationData> annotations = metadata.getAnnotations(ctx, image, types, userIds)
+for (MapAnnotationData annotation : annotations) {
+    MapAnnotationData mapAnnotation = (MapAnnotationData) annotation
+    List<NamedValue> list = (List<NamedValue>) mapAnnotation.getContent()
+    println("\nMapAnnotation ID: "+mapAnnotation.getId());
+    for (NamedValue namedValue : list)
+        println(namedValue.name + ": " + namedValue.value);
+}
+
 
 
 // Close the connection
