@@ -17,6 +17,7 @@ Contents:
    threshold_scripting
    headless_notebook
    imagej_python
+   view_mobie_zarr
 
 Contribute
 ----------
