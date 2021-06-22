@@ -42,3 +42,5 @@ Step-by-step
 #. Copy, into the text script editor of Fiji, :download:`mobie_ome_zarr.groovy <../scripts/groovy/mobie_ome_zarr.groovy>`.
 
 #. Click *Run*.
+
+#. The image will be displayed in the BigDataViewer. Adjust the settings accordingly.
