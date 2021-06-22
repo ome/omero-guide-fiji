@@ -30,5 +30,6 @@ import de.embl.cba.mobie.n5.source.Sources
 
 reader = new OMEZarrS3Reader("https://s3.embassy.ebi.ac.uk/", "us-west-2", "idr")
 
-image = reader.readKey("zarr/v0.2/6001247.zarr")
+image = reader.readKey("zarr/v0.1/9836839.zarr")
+//image = reader.readKey("zarr/v0.2/6001247.zarr")
 imageBdvSources = BdvFunctions.show(image)
