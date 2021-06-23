@@ -49,6 +49,10 @@ Step-by-step
 
 #. Click the *OK* button.
 
+#. When the image is displayed in the BigDataViewer, select the dialog and press *P* to display the rendering controls.
+
+#. Modify the settings as you see fit.
+
 **Opening an ome.zarr file using a Groovy script**
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
@@ -62,4 +66,6 @@ Step-by-step
 
 #. Click *Run*.
 
-#. The image will be displayed in the BigDataViewer. Adjust the settings accordingly.
+#. When the image is displayed in the BigDataViewer, select the dialog and press *P* to display the rendering controls.
+
+#. Modify the settings as you see fit.
