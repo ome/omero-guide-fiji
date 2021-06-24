@@ -26,10 +26,12 @@ Setup
 Resources
 ---------
 
--  Samples images from the Image Data Resource (IDR) that have been converted into `https://github.com/ome/ngff <https://github.com/ome/ngff>`__. A list of available files can be found `here <https://blog.openmicroscopy.org/>`__.
+- Samples images from the Image Data Resource (IDR) that have been converted into `https://github.com/ome/ngff <https://github.com/ome/ngff>`__. A list of available files can be found `here <https://blog.openmicroscopy.org/>`__.
 
--  Script: Groovy script for opening the images in BigDataViewer using MoBIE.
+- Script: Groovy script for opening the images in BigDataViewer using MoBIE.
    -  :download:`mobie_ome_zarr.groovy <../scripts/groovy/mobie_ome_zarr.groovy>`.
+
+- Watch intro `video <https://www.youtube.com/watch?v=KposKXm7xeg>`__.
 
 Step-by-step
 ------------
