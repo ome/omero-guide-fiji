@@ -64,7 +64,7 @@ Step-by-step
 
 #. A dialog pops up. In the *Language* menu, select *Groovy*.
 
-#. Copy, into the text script editor of Fiji, :download:`mobie_ome_zarr.groovy <../scripts/groovy/mobie_ome_zarr.groovy>`.
+#. Copy the content of :download:`mobie_ome_zarr.groovy <../scripts/groovy/mobie_ome_zarr.groovy>` and paste it into the text script editor of Fiji.
 
 #. Click *Run*.
 
