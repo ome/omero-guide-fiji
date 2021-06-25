@@ -31,7 +31,7 @@ Resources
 - Script: Groovy script for opening the images in BigDataViewer using MoBIE.
    -  :download:`mobie_ome_zarr.groovy <../scripts/groovy/mobie_ome_zarr.groovy>`.
 
-- Watch intro `video <https://www.youtube.com/watch?v=KposKXm7xeg>`__.
+- Watch an introductory `video <https://www.youtube.com/watch?v=KposKXm7xeg>`__.
 
 Step-by-step
 ------------
