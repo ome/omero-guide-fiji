@@ -35,7 +35,7 @@
  * https://docs.openmicroscopy.org/latest/omero5/developers/Java.html
  */
 #@ String(label="Username") USERNAME
-#@ String(label="Password", style='password') PASSWORD
+#@ String(label="Password", style='password', persist=false) PASSWORD
 #@ String(label="Host", value='wss://workshop.openmicroscopy.org/omero-ws') HOST
 #@ Integer(label="Image ID", value=2331) image_id
 
