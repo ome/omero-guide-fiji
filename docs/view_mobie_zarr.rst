@@ -16,7 +16,6 @@ Setup
 -----
 
 - Install Fiji on a local machine.
-- Activate the ``MoBIE-beta`` update site.
 - Go to ``Help>Update...``
 - In the ImageJ updater dialog, click on ``Manage update sites``.
 - Click ``Add update site``.
