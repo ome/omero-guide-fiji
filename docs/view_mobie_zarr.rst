@@ -46,7 +46,7 @@ Step-by-step
 
 #. In the text field, enter the desired URL e.g.
 
- ``https://s3.embassy.ebi.ac.uk/idr/zarr/v0.1/9836832.zarr``
+ ``https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.1/9836832.zarr``
 
 #. Click the *OK* button.
 
