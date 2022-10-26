@@ -18,8 +18,12 @@ Setup
 - Install Fiji on a local machine.
 - Go to ``Help>Update...``
 - In the ImageJ updater dialog, click on ``Manage update sites``.
-- Click ``Add update site``.
-- Enter for the name ``MoBIE`` (so you can identify it) and for the URL: ``https://sites.imagej.net/MoBIE/``. See `How to install an update site <https://imagej.net/update-sites/following>`__.
+- The `MoBIE`` should already be listed. Select it and click  ``Close``.
+- Click ``Apply changes`` to install it.
+- If `MoBIE`` is not listed:
+   - Click ``Add update site``.
+   - Enter for the name ``MoBIE`` (so you can identify it) and for the URL: ``https://sites.imagej.net/MoBIE/``. See `How to install an update site <https://imagej.net/update-sites/following>`__.
+   - Click ``Apply changes`` to install it.
 - Restart Fiji.
 
 Resources
