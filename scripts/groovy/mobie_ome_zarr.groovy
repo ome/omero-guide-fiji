@@ -29,12 +29,9 @@
  * Mobie and BigDataViewer (bdv).
  */
 
-import bdv.util.BdvFunctions
-import de.embl.cba.mobie.n5.zarr.OMEZarrS3Reader
-import de.embl.cba.mobie.n5.source.Sources
+import org.embl.mobie.OMEZarrViewer
+import org.embl.mobie.io.ome.zarr.openers.OMEZarrS3Opener
 
-reader = new OMEZarrS3Reader("https://uk1s3.embassy.ebi.ac.uk/", "us-west-2", "idr")
-
-image = reader.readKey("zarr/v0.1/9836839.zarr")
-//image = reader.readKey("zarr/v0.2/6001247.zarr")
-imageBdvSources = BdvFunctions.show(image)
+filePath = "https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0083A/9822152.zarr"      
+viewer = new OMEZarrViewer(OMEZarrS3Opener.readURL(filePath))
+viewer.show()
