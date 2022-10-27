@@ -18,14 +18,18 @@ Setup
 - Install Fiji on a local machine.
 - Go to ``Help>Update...``
 - In the ImageJ updater dialog, click on ``Manage update sites``.
-- Click ``Add update site``.
-- Enter for the name ``MoBIE`` (so you can identify it) and for the URL: ``https://sites.imagej.net/MoBIE/``. See `How to install an update site <https://imagej.net/update-sites/following>`__.
+- The `MoBIE`` should already be listed. Select it and click  ``Close``.
+- Click ``Apply changes`` to install it.
+- If `MoBIE`` is not listed:
+   - Click ``Add update site``.
+   - Enter for the name ``MoBIE`` (so you can identify it) and for the URL: ``https://sites.imagej.net/MoBIE/``. See `How to install an update site <https://imagej.net/update-sites/following>`__.
+   - Click ``Apply changes`` to install it.
 - Restart Fiji.
 
 Resources
 ---------
 
-- Samples images from the Image Data Resource (IDR) that have been converted into `https://github.com/ome/ngff <https://github.com/ome/ngff>`__. A list of available files can be found `here <https://blog.openmicroscopy.org/>`__.
+- Samples images from the Image Data Resource (IDR) that have been converted into `https://github.com/ome/ngff <https://github.com/ome/ngff>`__. A list of available files can be found `here <https://idr.github.io/ome-ngff-samples/>`__.
 
 - Script: Groovy script for opening the images in BigDataViewer using MoBIE.
    -  :download:`mobie_ome_zarr.groovy <../scripts/groovy/mobie_ome_zarr.groovy>`.
