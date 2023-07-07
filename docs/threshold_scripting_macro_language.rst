@@ -98,7 +98,6 @@ that Dataset in OMERO.
 #. In Excel, select the Dataset column and the column bounding_box and
    then click on *Insert > X Y Scatter > Scatter*\ |image2|\.
    Depending on the version of Excel you are using, this option
-   might not be available.
 
    ..
 
