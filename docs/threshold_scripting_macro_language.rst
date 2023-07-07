@@ -91,7 +91,6 @@ that Dataset in OMERO.
 #. In the *Settings* tab, turning channels on/off will also show/hide
    ROIs assigned to those channels.
 
-   Info tab in iviewer and clicking on OMERO.figure in the Open with
 
 #. A script was used previously to run on the whole **idr0021** Project
    and produce the resulting CSV file. We can now download this file
