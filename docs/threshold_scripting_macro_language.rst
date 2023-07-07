@@ -5,7 +5,7 @@ Description
 -----------
 
 The following workflows should work in
-Fiji, after these have been correctly set up with the OMERO plugin for
+Fiji, after it has been correctly set up with the OMERO plugin for
 Fiji/ImageJ.
 
 In this section we use the ImageJ macro language to access data in OMERO.
