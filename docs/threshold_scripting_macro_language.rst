@@ -92,7 +92,6 @@ that Dataset in OMERO.
    ROIs assigned to those channels.
 
    Info tab in iviewer and clicking on OMERO.figure in the Open with
-   line.\ |image1|
 
 #. A script was used previously to run on the whole **idr0021** Project
    and produce the resulting CSV file. We can now download this file
