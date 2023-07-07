@@ -101,7 +101,6 @@ that Dataset in OMERO.
 
 
 
-17. This will create a scatter plot. Right-click into the Chart now and
     select *Change chart type > Statistical > Box and Whisker*.
 
 
