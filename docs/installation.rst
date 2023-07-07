@@ -55,3 +55,25 @@ common steps:
 -  Move the downloaded file into the *ImageJ > plugins* folder.
 
 -  Restart ImageJ.
+
+
+**Installation of the plugins required to use the ImageJ marco language to interact with OMERO**
+
+The plugins are developed and supported by `Institute of genetics, reproduction & development iGReD) <https://www.igred.fr/en/institute-of-genetics-reproduction-development/>`__ in Clermont-Ferrand (France).
+
+- Download the latest version of *simple-omero-client* from https://github.com/GReD-Clermont/simple-omero-client:
+
+   - Click on the ``Tags`` tab
+   - Click on the most recent tag
+   - Download the ``simple-omero-client-<tag>.jar`` file e.g. ``simple-omero-client-5.12.1.jar``
+
+- Download the latest version of *omero_macro-extensions* from https://github.com/GReD-Clermont/omero_macro-extensions:
+
+   - Click on the ``Tags`` tab
+   - Click on the most recent tag
+   - Download the ``omero_macro-extensions-<tag>.jar`` file e.g. ``omero_macro-extensions-1.3.2.jar``
+
+-  Move the downloaded jars into the *Fiji > plugins* folder.
+
+-  Restart Fiji.
+
