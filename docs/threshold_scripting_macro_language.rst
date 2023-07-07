@@ -92,7 +92,6 @@ that Dataset in OMERO.
    ROIs assigned to those channels.
 
 
-#. A script was used previously to run on the whole **idr0021** Project
    and produce the resulting CSV file. We can now download this file
    from OMERO and open it in Microsoft Excel.
 
