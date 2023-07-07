@@ -1,5 +1,5 @@
-Segment OMERO data using the Scripting editor in Fiji
-=====================================================
+Segment OMERO data using the Scripting editor in Fiji using Groovy
+==================================================================
 
 Description
 -----------
