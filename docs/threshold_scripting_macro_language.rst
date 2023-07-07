@@ -101,7 +101,6 @@ that Dataset in OMERO.
 
 
 
-    select *Change chart type > Statistical > Box and Whisker*.
 
 
 .. |image1| image:: images/threshold_script2.png
