@@ -91,7 +91,6 @@ that Dataset in OMERO.
 #. In the *Settings* tab, turning channels on/off will also show/hide
    ROIs assigned to those channels.
 
-#. Open the image in OMERO.figure for a quick publication by going to
    Info tab in iviewer and clicking on OMERO.figure in the Open with
    line.\ |image1|
 
