@@ -15,6 +15,7 @@ Contents:
    manual_analysis
    threshold_manual
    threshold_scripting
+   threshold_scripting_macro_language
    headless_notebook
    imagej_python
    view_mobie_zarr
