@@ -99,7 +99,6 @@ that Dataset in OMERO.
    then click on *Insert > X Y Scatter > Scatter*\ |image2|\.
    Depending on the version of Excel you are using, this option
 
-   ..
 
 
 17. This will create a scatter plot. Right-click into the Chart now and
