@@ -61,13 +61,13 @@ common steps:
 
 The plugins are developed and supported by `Institute of genetics, reproduction & development iGReD) <https://www.igred.fr/en/institute-of-genetics-reproduction-development/>`__ in Clermont-Ferrand (France).
 
-- Download the latest version of *simple-omero-client* from https://github.com/GReD-Clermont/simple-omero-client:
+- Download the latest version of *simple-omero-client* from \ https://github.com/GReD-Clermont/simple-omero-client\ :
 
    - Click on the ``Tags`` tab
    - Click on the most recent tag
-   - Download the ``simple-omero-client-<tag>.jar`` file e.g. ``simple-omero-client-5.12.1.jar``
+   - Download the ``simple-omero-client-<tag>.jar`` file e.g. ``simple-omero-client-5.14.1.jar``
 
-- Download the latest version of *omero_macro-extensions* from https://github.com/GReD-Clermont/omero_macro-extensions:
+- Download the latest version of *omero_macro-extensions* from \ https://github.com/GReD-Clermont/omero_macro-extensions\ :
 
    - Click on the ``Tags`` tab
    - Click on the most recent tag
