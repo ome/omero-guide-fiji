@@ -92,14 +92,6 @@ that Dataset in OMERO.
    ROIs assigned to those channels.
 
 
-   and produce the resulting CSV file. We can now download this file
-   from OMERO and open it in Microsoft Excel.
-
-#. In Excel, select the Dataset column and the column bounding_box and
-   then click on *Insert > X Y Scatter > Scatter*\ |image2|\.
-   Depending on the version of Excel you are using, this option
-
-
 
 
 
