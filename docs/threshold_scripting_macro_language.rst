@@ -37,7 +37,7 @@ Setup
 -  Install Fiji on the local machine with the OMERO.insight-ij plugin.
    The installation instructions can be found at :doc:`installation`.
 -  Install the two plugins required to use the macro language.
-   Instructions can be found at :doc:`installation`.
+   Instructions can be found at :ref:`MacroInstallation`.
 
 
 Resources
