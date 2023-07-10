@@ -1,5 +1,5 @@
-How to install the OMERO plugin for Fiji/ImageJ
-===============================================
+How to install the OMERO plugins for Fiji/ImageJ
+================================================
 
 Description
 -----------
