@@ -1,16 +1,20 @@
-Segment OMERO data using the Scripting editor in Fiji using Groovy
-==================================================================
+Segment OMERO data using the Scripting editor in Fiji using ImageJ Macro language
+=================================================================================
 
 Description
 -----------
 
 The following workflows should work in
-Fiji, after these have been correctly set up with the OMERO plugin for
+Fiji, after it has been correctly set up with the OMERO plugin for
 Fiji/ImageJ.
+
+In this section we use the ImageJ macro language to access data in OMERO.
+To interact with OMERO using the **ImageJ macro language**, two extra plugins need
+to be installed.
 
 Using the Scripting editor of Fiji, we will show:
 
--  How to connect to OMERO using the JAVA API.
+-  How to connect to OMERO..
 
 -  How to load all the images within a given Dataset.
 
@@ -32,16 +36,20 @@ Setup
 
 -  Install Fiji on the local machine with the OMERO.insight-ij plugin.
    The installation instructions can be found at :doc:`installation`.
+-  Install the two plugins required to use the macro language.
+   Instructions can be found at :ref:`MacroInstallation`.
+
 
 Resources
 ---------
 
 -  Data: Samples images from the Image Data Resource (IDR) `idr0021 <https://idr.openmicroscopy.org/search/?query=Name:idr0021>`_.
 
--  `Java API documentation <https://docs.openmicroscopy.org/latest/omero/developers/Java.html>`__.
+-  Script: ImageJ macro language script for automatic segmentation of images from OMERO using Fiji
+   -  :download:`analyse_dataset_save_rois_and_summary_table.ijm <../scripts/analyse_dataset_save_rois_and_summary_table.ijm>`.
 
--  Script: Groovy script for automatic segmentation of images from OMERO using Fiji
-   -  :download:`analyse_dataset_save_rois_and_summary_table.groovy <../scripts/groovy/analyse_dataset_save_rois_and_summary_table.groovy>`.
+-  More examples on how to use the ImageJ Macro language and OMERO can be found at 
+   `macro extension examples <https://github.com/GReD-Clermont/omero_macro-extensions/tree/main/src/main/resources/script_templates/OMERO/Macro_Extensions>`__.
 
 Step-by-Step
 ------------
@@ -51,8 +59,6 @@ Dataset using the scripting facility available in Fiji.
 
 Let’s go over the script to understand the logic and see how it matches
 the UI steps.
-
-This script explores the `JAVA API <https://docs.openmicroscopy.org/latest/omero/developers/Java.html>`__ using Groovy.
 
 It will process all the Images in the specified Dataset,
 applying threshold, analyzing particles and saving ROIs back in
@@ -70,9 +76,9 @@ that Dataset in OMERO.
 
 #. Go to *File > New > Script...*.
 
-#. A dialog pops up. In the *Language* menu, select *Groovy*.
+#. A dialog pops up. In the *Language* menu, select *ImageJ macro* if not already selected.
 
-#. Copy, into the text script editor of Fiji, :download:`analyse_dataset_save_rois_and_summary_table.groovy <../scripts/groovy/analyse_dataset_save_rois_and_summary_table.groovy>`.
+#. Copy, into the text script editor of Fiji, :download:`analyse_dataset_save_rois_and_summary_table.ijm <../scripts/analyse_dataset_save_rois_and_summary_table.ijm>`.
 
 #. You will be asked to enter your login credentials when you run the script.
 
@@ -85,26 +91,8 @@ that Dataset in OMERO.
 #. In the *Settings* tab, turning channels on/off will also show/hide
    ROIs assigned to those channels.
 
-#. Open the image in OMERO.figure for a quick publication by going to
-   Info tab in iviewer and clicking on OMERO.figure in the Open with
-   line.\ |image1|
 
-#. The script :download:`idr0021.groovy <../scripts/groovy/idr0021.groovy>`
-   was used previously to run on the whole **idr0021** Project
-   and produce the resulting CSV file. We can now download this file
-   from OMERO and open it in Microsoft Excel.
 
-#. In Excel, select the Dataset column and the column bounding_box and
-   then click on *Insert > X Y Scatter > Scatter*\ |image2|\.
-   Depending on the version of Excel you are using, this option
-   might not be available.
-
-   ..
-
-   |image3|
-
-17. This will create a scatter plot. Right-click into the Chart now and
-    select *Change chart type > Statistical > Box and Whisker*.
 
 
 .. |image1| image:: images/threshold_script2.png

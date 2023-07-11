@@ -1,5 +1,5 @@
-How to install the OMERO plugin for Fiji/ImageJ
-===============================================
+How to install OMERO plugins for Fiji/ImageJ
+============================================
 
 Description
 -----------
@@ -25,8 +25,10 @@ We then describe how to install the *Bio-Formats Package* for ImageJ.
 Installing the OMERO plugin in Fiji also adds the dependencies
 required to connect to OMERO using the Script Editor of Fiji.
 
-Installation of the OMERO plugin for Fiji and ImageJ, the
-common steps:
+Installation of the OMERO plugin for Fiji and ImageJ
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Below are the common steps that need to be followed:
 
 -  Find the Plugins folder of your Fiji application and check if it contains any old omero_ij-5.x.x-all.jar file(s) or OMERO.imagej-5.x.x folder(s). Remove any such jar files or folders from the Plugins folder.
 
@@ -45,7 +47,8 @@ common steps:
 
 -  Now, restart Fiji. If you are using ImageJ, follow with the additional step below.
 
-**Installation of Bio-Formats Package, ImageJ only:**
+Installation of Bio-Formats Package, ImageJ only
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 -  Download the latest version of the *Bio-Formats Package* from:
    https://www.openmicroscopy.org/bio-formats/downloads
@@ -55,3 +58,27 @@ common steps:
 -  Move the downloaded file into the *ImageJ > plugins* folder.
 
 -  Restart ImageJ.
+
+.. _MacroInstallation:
+
+Installation of the plugins to interact with OMERO using the ImageJ marco language
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+The plugins are developed and supported by `Institute of genetics, reproduction & development (iGReD) <https://www.igred.fr/en/institute-of-genetics-reproduction-development/>`__ in Clermont-Ferrand (France).
+
+- Download the latest version of *simple-omero-client* from \ https://github.com/GReD-Clermont/simple-omero-client\ :
+
+   - Click on the ``Tags`` tab
+   - Click on the most recent tag
+   - Download the ``simple-omero-client-<tag>.jar`` file e.g. ``simple-omero-client-5.14.1.jar``
+
+- Download the latest version of *omero_macro-extensions* from \ https://github.com/GReD-Clermont/omero_macro-extensions\ :
+
+   - Click on the ``Tags`` tab
+   - Click on the most recent tag
+   - Download the ``omero_macro-extensions-<tag>.jar`` file e.g. ``omero_macro-extensions-1.3.2.jar``
+
+-  Move the downloaded jars into the *Fiji > plugins* folder.
+
+-  Restart Fiji.
+
