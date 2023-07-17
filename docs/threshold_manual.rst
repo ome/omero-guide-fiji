@@ -1,5 +1,5 @@
-Segment manually OMERO data using Fiji/ImageJ
-=============================================
+Manual Segmentation
+===================
 
 Description
 -----------
