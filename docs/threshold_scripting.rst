@@ -1,5 +1,5 @@
-Segment OMERO data using the Scripting editor in Fiji using Groovy
-==================================================================
+Segment using Groovy script
+===========================
 
 Description
 -----------
@@ -16,8 +16,8 @@ Using the Scripting editor of Fiji, we will show:
 
 -  How to load the images in ImageJ using Bio-Formats.
 
--  How to analyze the images using *Thresholding and Analyze Particles*
-   plugin in ImageJ within a script.
+-  How to analyze the images using *Auto Threshold* and *Analyze particles*
+   plugins in ImageJ within a script.
 
 -  How to save the segmented ROIs as polygons in OMERO.
 

@@ -1,5 +1,5 @@
-Analyze manually OMERO data using the OMERO plugin for Fiji/ImageJ
-==================================================================
+Analyze, save ROIs and measurements
+===================================
 
 Description
 -----------
@@ -33,9 +33,6 @@ Resources
 
 Step-by-step
 ------------
-
-**Example 1: ROIs and measurement creation**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 In this first example we show how to open an OMERO image in Fiji, draw ROIs, measure those ROIs and show how to save the ROIs and the measurement back to OMERO. 
 
@@ -95,42 +92,7 @@ In this first example we show how to open an OMERO image in Fiji, draw ROIs, mea
 
 #. Open the image in OMERO.iviewer to the see the ROIs and make sure that you can interact with them.
 
-**Example 2: Cropping and import**
-~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-In this example, we show how to open an OMERO image, crop the image and
-import the cropped image back to OMERO as OME-TIFF.
-
-In this example we assume that the user is already logged in. If this is
-not the case, go back to the first step of Example 1.
-
-#. Select a dataset, for example the *A-Fiji-dataset* Dataset.
-
-#. Double-click on a thumbnail or on an Image in the left-hand tree to open an Image in Fiji/ImageJ.
-
-#. Draw a Rectangle on the Image.
-
-#. Select the option *Image > Crop*.
-
-#. A new Image will be displayed in a Fiji/ImageJ window.
-
-#. Go to *Plugins > OMERO > Save Image(s) To OMERO*.
-
-#. An Import dialog will pop up.
-
-   .. image:: images/manual5.png
-
-#. Check that the option *Add Image from current window* is selected.
-
-#. Select where to import the cropped Image, for example an existing Dataset, e.g. *A-Fiji-dataset*. You can also select *New From Folder* option which will create a new Dataset named with the name of the image you opened from OMERO to Fiji. In case you select *No Dataset* option, the new image will be displayed in the *Orphaned Images* folder in OMERO.
-
-#. Click *Add to the Queue* button.
-
-#. Then click *Import*. The import will start.
-
-#. When the import is done, go back to the Tree view in the Fiji plugin or OMERO.web. Refresh. Check the new Image.
 
 .. |image1| image:: images/manual1.png
    :width: 0.24105in
    :height: 0.24105in
-
