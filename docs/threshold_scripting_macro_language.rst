@@ -1,5 +1,5 @@
-Segment OMERO data using the Scripting editor in Fiji using ImageJ Macro language
-=================================================================================
+Segment using ImageJ Macro language
+===================================
 
 Description
 -----------
