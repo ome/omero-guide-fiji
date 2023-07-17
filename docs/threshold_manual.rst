@@ -15,7 +15,7 @@ Using the User Interface of the OMERO plugin, we will show:
 -  How to open an image from OMERO.server into Fiji/ImageJ.
 
 -  How to manually segment an image opened from OMERO in Fiji/ImageJ
-   using the plugin *Thresholding and Analyze particles* in Fiji/ImageJ.
+   using the plugins *Auto Threshold* and *Analyze particles* in Fiji/ImageJ.
 
 -  How to record this workflow in Fiji/ImageJ, using the *Recorder* plugin, for later use.
 
