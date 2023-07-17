@@ -1,4 +1,4 @@
-Analyze, save ROIS and measurement
+Analyze, save ROIs and measurements
 ===================================
 
 Description
