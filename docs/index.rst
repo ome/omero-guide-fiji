@@ -38,7 +38,6 @@ Automated Analysis
 
    threshold_scripting_macro_language
    threshold_scripting
-   imagej_python
 
 Fiji and Zarr
 *************
@@ -61,3 +60,5 @@ Changes to the documentation or the materials should be made directly in the `om
    :hidden:
 
    headless_notebook
+   imagej_python
+
