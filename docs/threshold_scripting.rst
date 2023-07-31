@@ -89,30 +89,8 @@ that Dataset in OMERO.
    Info tab in iviewer and clicking on OMERO.figure in the Open with
    line.\ |image1|
 
-#. The script :download:`idr0021.groovy <../scripts/groovy/idr0021.groovy>`
-   was used previously to run on the whole **idr0021** Project
-   and produce the resulting CSV file. We can now download this file
-   from OMERO and open it in Microsoft Excel.
-
-#. In Excel, select the Dataset column and the column bounding_box and
-   then click on *Insert > X Y Scatter > Scatter*\ |image2|\.
-   Depending on the version of Excel you are using, this option
-   might not be available.
-
-   ..
-
-   |image3|
-
-17. This will create a scatter plot. Right-click into the Chart now and
-    select *Change chart type > Statistical > Box and Whisker*.
-
 
 .. |image1| image:: images/threshold_script2.png
    :width: 1.89583in
    :height: 0.36458in
-.. |image2| image:: images/threshold_script3.png
-   :width: 0.35417in
-   :height: 0.27083in
-.. |image3| image:: images/threshold_script4.png
-   :width: 1.125in
-   :height: 1.38542in
+
