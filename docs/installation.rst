@@ -13,6 +13,7 @@ The OMERO plugin does not have an update site yet.
 Setup step-by-step
 ------------------
 
+Download `Fiji <https://imagej.net/software/fiji/downloads>`__.
 We assume that you have already Fiji/ImageJ installed locally.
 
 In this section, we will cover the steps required to install the
