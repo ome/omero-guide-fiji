@@ -15,7 +15,7 @@ The scripts are embedded into a Jupyter Notebook. The Groovy language is used, w
 
 Setup
 -----
-Fiji has been installed in a Docker image using repo2docker.
+Fiji has been installed in a Docker image.
 
 
 Resources
