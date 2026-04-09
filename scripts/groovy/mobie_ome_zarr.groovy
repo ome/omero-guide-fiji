@@ -32,6 +32,6 @@
 import org.embl.mobie.OMEZarrViewer
 import org.embl.mobie.io.ome.zarr.openers.OMEZarrS3Opener
 
-filePath = "https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0083A/9822152.zarr"      
+filePath = "https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0083A/9822152.zarr"
 viewer = new OMEZarrViewer(OMEZarrS3Opener.readURL(filePath))
 viewer.show()

@@ -52,7 +52,7 @@ Step-by-step
 
 #. In the text field, you can click `Browse` to open local data or enter the desired URL e.g.
 
- ``https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr``
+ ``https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr``
 
 #. If you Click the `OK`` button tbis will open the image in `BigDataViewer`. You can also click the `Detect datasets` button to inspect the
    content of the zarr file, such as individual pyramid arrays and labels. You can select multiple items, for example to open
@@ -74,6 +74,6 @@ Step-by-step
 
 #. In the text field, enter the desired URL e.g.
 
- ``https://uk1s3.embassy.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr``
+ ``https://livingobjects.ebi.ac.uk/idr/zarr/v0.4/idr0062A/6001240.zarr``
 
 #. Click the `OK` button.
