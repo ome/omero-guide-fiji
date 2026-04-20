@@ -37,6 +37,8 @@ OMERO_INSIGHT_URL_BASE=https://github.com/ome/omero-insight/releases/download/v$
 wget https://downloads.imagej.net/fiji/latest/fiji-nojre.zip
 unzip -q fiji-nojre.zip
 rm fiji-nojre.zip
+# Fix pyimagej issue: https://forum.image.sc/t/fiji-fails-to-launch-after-update/44582/2
+mv Fiji.app/jars/FilamentDetector-1.0.0.jar Fiji.app/jars/FilamentDetector-1.0.0.jar.disabled
 
 
 pushd Fiji.app/plugins
